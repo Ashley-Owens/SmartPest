@@ -7,8 +7,8 @@ body {
 }
 
 .carousel-item {
-    width: 100%; /*width you want*/
-    height: 60%; /*height you want*/
+    width: 100%;
+    height: 60%;
     overflow: hidden;
 }
 
@@ -43,7 +43,7 @@ div h5 {
     color: rgba(255,255,255,.85);
 }
 
-#generic-text {
+.generic-text {
     font-size: 1rem;
     font-weight: 300;
     color:#9aa3a8;
@@ -145,6 +145,7 @@ p.d-grid.text-center.fw-light {
     /* background-color: #42454a; */
     background-color: #accd2d;
     /* background-color: #bbe513; */
+    border-radius: 1%
 }
 
 .card-header {
@@ -198,3 +199,35 @@ textarea {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #C7EA46;
     color: white;
 }
+
+/* -------------------------- Services Page ------------------------- */
+.cover-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-icon1 {
+    width: 8rem;
+    height: 8rem;
+}
+.card-icons {
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+/* .features-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+} */
+
+/* .features-icons .features-icons-item {
+    max-width: 20rem;
+} */
+
+/* .features-icons .features-icons-item .features-icons-icon {
+    height: 7rem;
+}
+   */
+  
+  
