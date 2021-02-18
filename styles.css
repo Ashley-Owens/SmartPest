@@ -49,6 +49,11 @@ div h5 {
     color:#9aa3a8;
 }
 
+.sm-text {
+    font-size: .9rem;
+    font-weight: 300;
+}
+
 .card-img {
     opacity: 0.2;
     color: black;
@@ -141,8 +146,8 @@ p.d-grid.text-center.fw-light {
 }
 
 img.social-links {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 #attribution {
