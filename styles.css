@@ -158,11 +158,12 @@ img.social-links {
 }
 
 /* ----------------- Contact Us Page and Form Styling ----------------*/
-.contact-form {
+.form-bg {
     /* background-color: #42454a; */
     background-color: #accd2d;
     /* background-color: #bbe513; */
-    border-radius: 1%
+    border-radius: 1%;
+    padding: .1vh;
 }
 
 .card-header {
