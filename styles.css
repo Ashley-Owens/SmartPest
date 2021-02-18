@@ -74,6 +74,7 @@ p.d-grid.text-center.fw-light {
     font-size: x-small;
 }
 
+
 /* ---------------------- Nav Bar Styling ------------------------*/
 .navbar {
     padding-top: 20px;
@@ -139,6 +140,22 @@ p.d-grid.text-center.fw-light {
     font-size: .7rem;
 }
 
+img.social-links {
+    width: 3rem;
+    height: 3rem;
+}
+
+#attribution {
+    font-weight: 300;
+    font-size: .7rem;
+    color: gray;
+}
+
+#attribution a {
+    font-weight: 300;
+    font-size: .7rem;
+    color: gray;
+}
 
 /* ----------------- Contact Us Page and Form Styling ----------------*/
 .contact-form {
