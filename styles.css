@@ -181,15 +181,6 @@ img.social-links {
     /* background-color: #83868f; */
 }
 
-textarea {
-    overflow-y: scroll;
-    /* resize: none; */
-}
-
-.scrollable-element {
-    scrollbar-color: dark;
-}
-
 #formBody {
     /* background-color: #e0e4e9; */
     /* background-color: #757a7f; */
