@@ -63,17 +63,6 @@
       <div class="row">
         <div class="col-sm-4 p-2">
           <div class="mx-auto card bg-dark">
-            <div class="d-flex pt-2">
-              <img src="img/no-bugs.png" class="card-icon1 m-auto">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title pb-3">Extermination</h5>
-              <p class="generic-text card-text pb-3">We utilize evidence-based protocols with tactical precision to not only prevent but also stop infestations in their tracks.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 p-2">
-          <div class="mx-auto card bg-dark">
             <div class="d-flex p-4">
               <img src="img/search.png" class="card-icons m-auto">
             </div>
@@ -84,13 +73,24 @@
           </div>
         </div>
         <div class="col-sm-4 p-2">
+          <div class="mx-auto card bg-dark">
+            <div class="d-flex pt-2">
+              <img src="img/no-bugs.png" class="card-icon1 m-auto">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title pb-3">Extermination</h5>
+              <p class="generic-text card-text pb-3">We utilize evidence-based protocols with tactical precision to not only prevent but also stop infestations in their tracks.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 p-2">
           <div class="card bg-dark">
             <div class="d-flex p-4">
               <img src="img/biodegradable.png" class="card-icons m-auto">
             </div>
             <div class="card-body">
               <h5 class="card-title pb-3">Eco-Friendly</h5>
-              <p class="generic-text card-text pb-3">Our pest management philosophy is greener by design. We use a variety of methods and only use chemical treatments as a last resort.</p>
+              <p class="generic-text card-text pb-3">Our pest management philosophy is greener by design. We use a variety of methods and implement least toxic substances first.</p>
             </div>
           </div>
         </div>
@@ -111,8 +111,46 @@
   </section>
 
   <!-- Apartment, Residential, Commercial Service Explanation -->
-  <section>
-    
+  <section class="p-3">
+    <div class="container-md" id="tab-container">
+      <div class="card text-white bg-dark mb-3">
+        <div class="card-header">
+          <ul class="nav nav-pills" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link tab active" id="pills-apt-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Apartments</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link tab" id="pills-comm-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Commercial</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link tab" id="pills-res-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Residential</button>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body bg-gradient" id="tab-body">
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-apt-tab">
+              <p class="card-text p-3">Even a little pest problem is a huge headache for an apartment manager. The constant activity and closely clustered resources in apartment complexes make them especially susceptible to pests. Without immediate action, pests spread rapidly from unit to unit. Unit turnover rates go up, potential tenants flee at the first sight of pests and sanitation concerns raise the possibility of legal complaints. From apartments to senior living facilities, Smart Pest hits existing infestations hard and stops potential infestations in their tracks.</p>
+              <h5 class="services card-title p-3">Our Services</h5>
+              <ul class="p3" id="apartmentServices">
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-comm-tab">
+              <p class="card-text p-3">Pests can be a costly problem for your business. Day-to-day disruptions and worrisome health risks are just the beginning. A pest problem can mean fines, failed inspections, and destroyed goods. Our teams operate quickly and with the utmost discretion. We tailor our solutions to minimize disruptions to your business operations. Along with our custom treatment plan comes a full assessment of your facility, identifying vulnerabilities like access points and nesting areas. Smart Pest is here to help you protect your business and keep things running smoothly.</p>
+              <h5 class="card-title p-3">Our Services</h5>
+              <ul class="p3" id="commServices">
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-res-tab">
+              <p class="card-text p-3">Pests in your home introduce threats of disease and property damage. That’s where Smart Pest comes in. We act swiftly to put an end to infestations of all types and magnitudes. Whether you have one pesky pigeon nest or a whole colony of termites, we’re here to help. We’ll create a custom, comprehensive treatment plan for your home and go over the details with you. We’ll even give you recommendations for preventing future infestations.</p>
+              <h5 class="card-title p-3">Our Services</h5>
+              <ul class="p3" id="residentServices">
+              </ul>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -218,6 +256,7 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -232,18 +232,34 @@ img.social-links {
     height: 4.5rem;
 }
 
-/* .features-icons {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-} */
-
-/* .features-icons .features-icons-item {
-    max-width: 20rem;
-} */
-
-/* .features-icons .features-icons-item .features-icons-icon {
-    height: 7rem;
+#tab-body {
+    background-color: #5d6065;
 }
-   */
-  
-  
+
+#tab-container {
+    max-width: 55rem;
+    max-height: 25rem;
+    overflow: scroll;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #C32B51 !important;
+}
+
+.nav-link.tab {
+    color: rgba(255,255,255,.75);
+}
+
+.services.card-title {
+    color: #ee4b6e;
+}
+
+/* This code generates a dark mode scroll bar, found on Reddit.
+https://www.reddit.com/r/FirefoxCSS/comments/a7nj0l/code_to_make_scrollbar_dark/?utm_source=share&utm_medium=web2x&context=3 */
+:root{
+    scrollbar-color: #accd2d #2E3645 !important;
+    scrollbar-width: thin !important;
+}
+* {
+    scrollbar-width: thin !important;
+}  
