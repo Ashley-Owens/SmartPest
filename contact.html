@@ -51,31 +51,34 @@
     </div>
   </nav>
   <!-- Contact Us Form -->
-  <section class="p-5">
-    <div class="container-sm my-5 form-bg bg-gradient">
+  <!-- Alert banners are generated with JS -->
+  <section class="px-5 py-4">
+    <div class="container-sm alert" role="alert" id="formAlert">
+    </div>
+    <div class="container-sm my-4 form-bg bg-gradient">
       <div class="card" id="formBody">
         <h5 class="card-header form-header bg-dark">Reach Out</h5>
         <div class="card-body bg-gradient p-4">
-          <p class="card-text p-2 fw-lighter">We'd love to hear from you! Please send us a message to schedule a free property evaluation.</p>
-          <form>
+          <p class="card-text fw-lighter p-2">We'd love to hear from you! Please send us a message to schedule a free property evaluation.</p>
+          <form action="" method="POST" id="emailForm">
             <div class="form-group p-2">
               <label for="name">Name</label>
-              <input type="name" class="form-control p-2" id="formInputName" placeholder="">
+              <input type="name" class="form-control p-2" id="formInputName" required>
             </div>
             <div class="form-group p-2">
               <label for="email">Email address</label>
-              <input type="email" class="form-control p-2" id="formInputEmail" aria-describedby="emailHelp" placeholder="">
+              <input type="email" class="form-control p-2" id="formInputEmail" aria-describedby="emailHelp" required>
             </div>
             <div class="form-group p-2">
               <label for="name">Subject</label>
-              <input type="name" class="form-control p-2" id="formSubject" placeholder="">
+              <input type="name" class="form-control p-2" id="formSubject" required>
             </div>
             <div class="form-group p-2">
               <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-              <textarea class="form-control p-2" id="formTextarea" rows="3"></textarea>
+              <textarea class="form-control p-2" id="formTextarea" rows="3" required></textarea>
             </div>
             <div class="form-group p-2">
-                <button type="submit" class="btn bg-dark">Send</button>
+                <button type="submit" class="btn" id="submitBtn">Send</button>
             </div>
           </form>
         </div>
@@ -132,7 +135,7 @@
               Tempe, AZ 85282
             </li>
             <li class="pb-3">
-              <a class="footer-links text-xs" href="mailto:customercare@smartpestaz.com" target="blank" rel="nofollow noreferrer noopener" data-sanitized="mailto:customercare@smartpestaz.com">customercare@smartpestaz.com</a>
+              <a class="footer-email text-xs" href="mailto:customercare@smartpestaz.com" target="blank" rel="nofollow noreferrer noopener" data-sanitized="mailto:customercare@smartpestaz.com">customercare@smartpestaz.com</a>
             </li>
         </div>
         <div class="col-sm">
@@ -180,6 +183,7 @@
     </div>
   </footer> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="js/contact.js"></script>
 </body>
 
 </html>

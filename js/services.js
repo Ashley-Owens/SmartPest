@@ -1,4 +1,3 @@
-
 var generalList = [
     "Exterior and Interior Contracted Services",
     "Construction Termite Pre-treatment",
@@ -23,11 +22,14 @@ function dispListContent(arr, id) {
         arr.sort()
         arr.forEach( function (e) {
             let lst = document.createElement('li');
+            lst.className = 'list-group-item p-3';
+            lst.style.color = "black";
             lst.appendChild(document.createTextNode(e));
             content.appendChild(lst);
         });
     }
 }
+
 
 // Populates the list on content load.
 document.addEventListener('DOMContentLoaded', (event) => {
