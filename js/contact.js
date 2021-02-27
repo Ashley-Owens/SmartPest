@@ -1,5 +1,5 @@
 function postForm() {
-    // Performs API call to httpbin and displays information.
+    // Performs API call to httpbin.
     document.getElementById('submitBtn').addEventListener('click', function(event) {
         var req = new XMLHttpRequest();
         var payload = {message:null};
@@ -14,7 +14,7 @@ function postForm() {
             req.setRequestHeader('Content-Type', 'application/json');
         } else {
             let content = "Please complete all text fields prior to submitting form."
-            return renderAlert('formAlert', 'alert-secondary', content);
+            return renderAlert('formAlert', 'alert-dark', content);
         }
 
         // Performs error checking on asynchronous request and prints success message to the browser.

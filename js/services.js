@@ -31,12 +31,12 @@ function dispListContent(arr, id) {
 }
 
 
-// Populates the list on content load.
+// Populates the list on DOM load.
 document.addEventListener('DOMContentLoaded', (event) => {
     dispListContent(generalList, 'apartmentServices');
 });
 
-// Populates the list for different categories when button clicked.
+// Populates the list for different categories when respective button is clicked.
 document.getElementById("pills-comm-tab").addEventListener('click', function() {
     dispListContent(generalList, "commServices")});
 
