@@ -9,7 +9,7 @@ for (let i = 0; i < accButtons.length; i++) {
         this.classList.toggle("active");
         let panel = this.nextElementSibling;
 
-        // Expands and collapses the text panel of text.
+        // Expands and collapses the paragraph text panel.
         if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
         } else {

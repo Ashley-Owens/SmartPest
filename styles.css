@@ -1,6 +1,5 @@
 /* --------------- Home Page ---------------------- */
 body {
-    /* background-color: #141618; */
     background-color: #121212;
     /* color: rgba(255,255,255,.85); */
 }
@@ -283,8 +282,11 @@ img.social-links {
     font-weight: 300;
 }
 
-#faqAccordion {
+.faq-container {
     max-width: 70rem;
+}
+.pricing-container {
+    max-width: 75rem;
 }
 
 .dark-mode {
@@ -351,6 +353,15 @@ img.social-links {
 }
 
 #pdf-icon {
-    width: 6rem;
-    height: 6rem;
+    width: 5.5rem;
+    height: 5.5rem;
 }
+
+th {
+    color: #e7265d;
+}
+
+td {
+    color:rgba(255, 255, 255, 0.85);
+}
+
