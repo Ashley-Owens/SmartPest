@@ -173,15 +173,14 @@ img.social-links {
     font-weight: 300;
     font-size: .7rem;
     color: gray;
-}
-
-#attribution a {
-    font-weight: 300;
-    font-size: .7rem;
-    color: gray;
     text-align: end;
 }
 
+#attribution a {
+    color: gray;
+}
+
+/* Changes formatting for small screens */
 @media (max-width: 565px) {
     .footer-header {
         text-align: center;
