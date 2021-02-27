@@ -2,7 +2,7 @@ function postForm() {
     // Performs API call to httpbin.
     document.getElementById('submitBtn').addEventListener('click', function(event) {
         var req = new XMLHttpRequest();
-        var payload = {message:null};
+        var payload = {};
         payload.name = document.getElementById('formInputName').value;
         payload.email = document.getElementById('formInputEmail').value;
         payload.subject = document.getElementById('formSubject').value;
@@ -14,7 +14,7 @@ function postForm() {
             req.setRequestHeader('Content-Type', 'application/json');
         } else {
             let content = "Please complete all text fields prior to submitting form."
-            return renderAlert('formAlert', 'alert-dark', content);
+            return renderAlert('formAlert', content, 'error');
         }
 
         // Performs error checking on asynchronous request and prints success message to the browser.
@@ -22,23 +22,31 @@ function postForm() {
             if(req.status >= 200 && req.status < 400){
                 var response = JSON.parse(req.responseText);
                 console.log(response);
-                let contentSuccess = "Success! Your message was submitted successfully. Thank you!";
-                renderAlert("formAlert", "alert-primary", contentSuccess);
+                let contentSuccess = "Success. We will contact you within 1-2 business days. Thank you!";
+                renderAlert("formAlert", contentSuccess, 'success');
                 document.getElementById("emailForm").reset();
             } else {
                 console.log("Error in network request: " + req.statusText);
+                let error = 'Unable to submit, please try again later.'
+                renderAlert("formAlert", error, 'success');
             }});
         req.send(JSON.stringify(payload));
         event.preventDefault();
     })
 }
 
-// Renders success and error message to the browser.
-function renderAlert(id, classes, content) {
+// Renders success and error messages to the browser.
+function renderAlert(id, content, bannerType) {
     let formAlert = document.getElementById(id);
-    formAlert.className = classes;
-    formAlert.className += " alert container-sm text-center"
     formAlert.textContent = content;
+    
+    // Changes background color depending on banner type.
+    if (bannerType === 'success') {
+        formAlert.style.color = "#adcd2d";
+        formAlert.style.fontWeight = '250';
+    } else {
+        formAlert.style.color = "#bd1b56";
+    }
     formAlert.style.visibility = "visible";
 }
 
