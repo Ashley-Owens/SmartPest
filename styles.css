@@ -163,6 +163,10 @@ https://www.reddit.com/r/FirefoxCSS/comments/a7nj0l/code_to_make_scrollbar_dark/
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
+    .pricing-section {
+        margin: 0rem !important;
+        padding: .5rem;
+    }
 }
 
 /* ---------------------- Nav Bar Styling ------------------------*/
@@ -390,6 +394,11 @@ img.social-links {
 .faq-container {
     max-width: 70rem;
 }
+
+.pricing-section {
+    margin: 1.5rem;
+}
+
 .pricing-container {
     max-width: 70rem;
     padding-top: 1rem;
