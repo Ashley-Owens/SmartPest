@@ -1,39 +1,38 @@
-function postForm() {
-    // Performs API call to httpbin.
-    document.getElementById('submitBtn').addEventListener('click', function(event) {
-        var req = new XMLHttpRequest();
-        var payload = {};
-        payload.name = document.getElementById('formInputName').value;
-        payload.email = document.getElementById('formInputEmail').value;
-        payload.subject = document.getElementById('formSubject').value;
-        payload.message = document.getElementById('formTextarea').value;
+// Performs API call to httpbin.
+function postForm(event) {
+    var req = new XMLHttpRequest();
+    var payload = {};
+    payload.name = document.getElementById('formInputName').value;
+    payload.email = document.getElementById('formInputEmail').value;
+    payload.subject = document.getElementById('formSubject').value;
+    payload.message = document.getElementById('formTextarea').value;
 
-        // Performs a POST request using form data.
-        if (payload.message && payload.name && payload.email) {
-            req.open('POST', `http://httpbin.org/post`, true);
-            req.setRequestHeader('Content-Type', 'application/json');
+    // Performs a POST request using form data.
+    if (payload.message && payload.name && payload.email) {
+        req.open('POST', `http://httpbin.org/post`, true);
+        req.setRequestHeader('Content-Type', 'application/json');
+    } else {
+        let content = "Please complete all text fields prior to submitting form."
+        return renderAlert('formAlert', content, 'error');
+    }
+
+    // Performs error checking on asynchronous request and prints success message to the browser.
+    req.addEventListener('load',function(){
+        if(req.status >= 200 && req.status < 400){
+            var response = JSON.parse(req.responseText);
+            console.log(response);
+            let contentSuccess = "Success. We will contact you within 1-2 business days. Thank you!";
+            renderAlert("formAlert", contentSuccess, 'success');
+            document.getElementById("emailForm").reset();
         } else {
-            let content = "Please complete all text fields prior to submitting form."
-            return renderAlert('formAlert', content, 'error');
-        }
-
-        // Performs error checking on asynchronous request and prints success message to the browser.
-        req.addEventListener('load',function(){
-            if(req.status >= 200 && req.status < 400){
-                var response = JSON.parse(req.responseText);
-                console.log(response);
-                let contentSuccess = "Success. We will contact you within 1-2 business days. Thank you!";
-                renderAlert("formAlert", contentSuccess, 'success');
-                document.getElementById("emailForm").reset();
-            } else {
-                console.log("Error in network request: " + req.statusText);
-                let error = 'Unable to submit, please try again later.'
-                renderAlert("formAlert", error, 'success');
-            }});
-        req.send(JSON.stringify(payload));
-        event.preventDefault();
-    })
+            console.log("Error in network request: " + req.statusText);
+            let error = 'Unable to submit, please try again later.'
+            renderAlert("formAlert", error, 'success');
+        }});
+    req.send(JSON.stringify(payload));
+    event.preventDefault();
 }
+
 
 // Renders success and error messages to the browser.
 function renderAlert(id, content, bannerType) {
@@ -50,4 +49,7 @@ function renderAlert(id, content, bannerType) {
     formAlert.style.visibility = "visible";
 }
 
-document.addEventListener('DOMContentLoaded', postForm);
+
+// Adds event listeners for browser clicks and mobile taps.
+document.getElementById('submitBtn').addEventListener('click', postForm);
+document.getElementById('submitBtn').addEventListener('touchend', postForm);
