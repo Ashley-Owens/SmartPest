@@ -195,6 +195,14 @@ img.social-links {
     #attribution {
         text-align: center;
     }
+    #pills-tab {
+        margin-right: 0rem;
+        margin-left: 0rem;
+        text-align: center;
+    }
+    #tab-container {
+        text-align: center;
+    }
 }
 
 /* ----------------- Contact Us Styling ----------------*/
@@ -291,6 +299,8 @@ img.social-links {
 
 .nav-link.tab {
     color: rgba(255,255,255,.75);
+    margin-right: .5rem;
+    margin-left: .5rem;
 }
 
 .services.card-title {
