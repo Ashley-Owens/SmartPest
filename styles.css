@@ -482,4 +482,7 @@ td {
         margin: 0rem;
         padding: .25rem;
     }
+    #formAlert {
+        max-width: 100%;
+    }
 }
