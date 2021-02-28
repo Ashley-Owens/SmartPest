@@ -9,7 +9,7 @@ function postForm(event) {
 
     // Performs a POST request using form data.
     if (payload.message && payload.name && payload.email) {
-        req.open('POST', `http://httpbin.org/post`, true);
+        req.open('POST', `https://httpbin.org/post`, true);
         req.setRequestHeader('Content-Type', 'application/json');
     } else {
         let content = "Please complete all text fields prior to submitting form."
