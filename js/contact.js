@@ -52,4 +52,4 @@ function renderAlert(id, content, bannerType) {
 
 // Adds event listeners for browser clicks and mobile taps.
 document.getElementById('submitBtn').addEventListener('click', postForm);
-document.getElementById('submitBtn').addEventListener('touchstart', postForm);
+// document.getElementById('submitBtn').addEventListener('touchstart', postForm);
