@@ -51,33 +51,32 @@
   <!-- Contact Us Form -->
   <!-- Alert banners are generated with JS -->
   <section class="px-5 py-4">
-    
     <div class="container-fluid">
       <div class="alert text-center container-sm" role="alert" id="formAlert"></div>
     </div>
     <div class="container-sm my-4 form-bg bg-gradient">
-      <div class="card" id="formBody">
+      <div class="card" id="form-card">
         <h5 class="card-header form-header bg-dark">Reach Out</h5>
-        <div class="card-body bg-gradient p-4">
+        <div class="card-body bg-gradient form-body" id='form-body'>
           <p class="card-text fw-lighter p-2">We'd love to hear from you! Please send us a message to schedule a free property evaluation.</p>
           <form action="" method="POST" id="emailForm">
-            <div class="form-group p-2">
+            <div class="form-group">
               <label for="name">Name</label>
               <input type="name" class="form-control p-2" id="formInputName" required>
             </div>
-            <div class="form-group p-2">
+            <div class="form-group">
               <label for="email">Email address</label>
               <input type="email" class="form-control p-2" id="formInputEmail" aria-describedby="emailHelp" required>
             </div>
-            <div class="form-group p-2">
+            <div class="form-group">
               <label for="name">Subject</label>
               <input type="name" class="form-control p-2" id="formSubject" required>
             </div>
-            <div class="form-group p-2">
+            <div class="form-group">
               <label for="exampleFormControlTextarea1" class="form-label">Message</label>
               <textarea class="form-control p-2" id="formTextarea" rows="3" required></textarea>
             </div>
-            <div class="form-group p-2">
+            <div class="form-group">
                 <button type="submit" class="btn" id="submitBtn">Send</button>
             </div>
           </form>

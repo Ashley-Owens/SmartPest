@@ -22,7 +22,7 @@ function dispListContent(arr, id) {
         arr.sort()
         arr.forEach( function (e) {
             let lst = document.createElement('li');
-            lst.className = 'list-group-item p-3';
+            lst.className = 'services list-group-item';
             lst.style.color = "black";
             lst.appendChild(document.createTextNode(e));
             content.appendChild(lst);
