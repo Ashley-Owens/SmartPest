@@ -165,7 +165,7 @@ https://www.reddit.com/r/FirefoxCSS/comments/a7nj0l/code_to_make_scrollbar_dark/
     }
     .pricing-section {
         margin: 0rem !important;
-        padding: .5rem;
+        padding: .25rem !important;
     }
 }
 
@@ -396,7 +396,7 @@ img.social-links {
 }
 
 .pricing-section {
-    margin: 1.5rem;
+    padding: 1.5rem;
 }
 
 .pricing-container {
