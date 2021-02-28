@@ -22,6 +22,7 @@ body {
 .home-card {
     background-color: #42454a;
     color: rgba(255,255,255,.85);
+    padding: 1rem;
 }
 
 #learnMoreBtn {
@@ -54,6 +55,10 @@ div h5 {
 .sm-text {
     font-size: .9rem;
     font-weight: 300;
+}
+
+.cust-review {
+    padding: 1.5rem;
 }
 
 .card-img {
@@ -91,6 +96,74 @@ https://www.reddit.com/r/FirefoxCSS/comments/a7nj0l/code_to_make_scrollbar_dark/
     scrollbar-width: thin !important;
 }
 
+/* Changes formatting for small screens */
+@media (max-width: 565px) {
+    .footer-header {
+        text-align: center;
+    }
+    .nav-item {
+        text-align: center;
+    }
+    .copyright {
+        text-align: center;
+        padding: .5rem;
+    }
+    #attribution {
+        text-align: center;
+    }
+    #pills-tab {
+        margin-right: 0rem;
+        margin-left: 0rem;
+        text-align: center;
+    }
+    #tab-container {
+        text-align: center;
+    }
+    #form-body {
+        padding: .25rem;
+    }
+    .form-group {
+        padding: .25rem !important;
+    }
+    .learn-header {
+        text-align: center;
+    }
+    
+    .faq-container {
+        max-width: 90rem !important;
+        text-align: center;
+    }
+    .forms-container {
+        max-width: 90rem !important;
+        text-align: center;
+    }
+    .pricing-container {
+        max-width: 90rem !important;
+        text-align: center;
+    }
+    #pdf-icon {
+        margin-left: 0 !important;
+    }
+    .services.card-text {
+        padding: .25rem !important;
+    }
+    .services-list {
+        padding: 0;
+    }
+    .services.list-group {
+        padding: 0rem !important;
+        margin: 0rem !important;
+    }
+    .services.list-group-item {
+        padding: .5rem !important;
+    }
+    .cust-review {
+        padding-top: 0 !important;
+        padding-bottom: 1rem !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
 
 /* ---------------------- Nav Bar Styling ------------------------*/
 .navbar {
@@ -180,68 +253,6 @@ img.social-links {
     color: gray;
 }
 
-/* Changes formatting for small screens */
-@media (max-width: 565px) {
-    .footer-header {
-        text-align: center;
-    }
-    .nav-item {
-        text-align: center;
-    }
-    .copyright {
-        text-align: center;
-        padding: .5rem;
-    }
-    #attribution {
-        text-align: center;
-    }
-    #pills-tab {
-        margin-right: 0rem;
-        margin-left: 0rem;
-        text-align: center;
-    }
-    #tab-container {
-        text-align: center;
-    }
-    #form-body {
-        padding: .25rem;
-    }
-    .form-group {
-        padding: .25rem !important;
-    }
-    .learn-header {
-        text-align: center;
-    }
-    
-    .faq-container {
-        max-width: 90rem !important;
-        text-align: center;
-    }
-    .forms-container {
-        max-width: 90rem !important;
-        text-align: center;
-    }
-    .pricing-container {
-        max-width: 90rem !important;
-        text-align: center;
-    }
-    #pdf-icon {
-        margin-left: 0 !important;
-    }
-    .services.card-text {
-        padding: .25rem !important;
-    }
-    .services-list {
-        padding: 0;
-    }
-    .services.list-group {
-        padding: 0rem !important;
-        margin: 0rem !important;
-    }
-    .services.list-group-item {
-        padding: .5rem !important;
-    }
-}
 
 /* ----------------- Contact Us Styling ----------------*/
 .form-bg {
@@ -381,6 +392,8 @@ img.social-links {
 }
 .pricing-container {
     max-width: 70rem;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
 }
 
 .dark-mode {
